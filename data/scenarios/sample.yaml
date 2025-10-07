@@ -1,0 +1,19 @@
+graph:
+  map_csv: data/sample_map.csv
+  coords_csv: data/sample_coords.csv
+lights:
+  csv: data/sample_lights.csv
+vehicles:
+  csv: data/sample_vehicles.csv
+
+simulation:
+  ticks: 300
+  dispatch_limit_per_green: 5
+  route_algorithm: "dijkstra" # "dijkstra" | "astar"
+  seed: 42
+  log_path: "./output/logs.txt"
+  kpi_export: "./output/kpis.csv"
+
+astar:
+  use: false
+  heuristic: "euclid" # "euclid" (yêu cầu coords_csv)

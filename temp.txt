@@ -1,0 +1,2 @@
+$env:PYTHONPATH="src"
+pytest test/test_traffic_light.py -v
